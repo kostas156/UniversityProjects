@@ -9,7 +9,7 @@
 1. [Software Engineering](#software-engineering) (Pending)
     - Earthqake Information Website with API
 2. [Microprocessors and Applications](#microprocessors-and-applications)
-    - Project 2.1
+    - Number convertion in ARM Processor
 3. [Integrated Circuits](#subject-3) (Pending)
     - Tic Tac Toe Game using SystemVerilog
 4. [Databases](#subject-4) (Pending)
