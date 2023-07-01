@@ -6,25 +6,23 @@
 
 ## 📚 Table of Contents
 
-- [Subject 1](#subject-1)
-  - [Project 1.1](#project-11)
-  - [Project 1.2](#project-12)
-- [Subject 2](#subject-2)
+- [Software Engineering](subject-1)
+  - [Earthqake Information Website with API](#project-11)
+- [Microprocessors and Applications](#subject-2)
   - [Project 2.1](#project-21)
-  - [Project 2.2](#project-22)
-- [Subject 3](#subject-3)
-  - [Project 3.1](#project-31)
-  - [Project 3.2](#project-32)
+- [Integrated Circuits](#subject-3)
+  - [Tic Tac Toe Game using SystemVerilog](#project-31)
+- [Databases](#subject-4)
+  - [Grading System Website with MySQL Database](#project-31)
+- [Computational Intelligence](#subject-5)
+  - [Knapsack Problem using Genetic Algorithm](#project-31)
+- [Algorithms and Complexity](#subject-6)
+  - [RNA Secondary Structure](#project-31)
+  - [K-Center Problem Implementations](#project-32)
 
-## 📖 Subject 1
+## 📖 Software Engineering
 
 ### 🚀 Project 1.1
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-### 🚀 Project 1.2
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
