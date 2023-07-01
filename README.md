@@ -28,7 +28,7 @@
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## 📖## Microprocessors and Applications
+## 📖 ## Microprocessors and Applications
 
 ### 🚀 Project 2.1
 
