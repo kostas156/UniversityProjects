@@ -29,7 +29,7 @@
 ### 🚀 Earthquake Information Website using API
 
 - **Project Name:** Earthquake Website
-- **Description:** Using the API for the earthquakes which is provided by [www.usgs.gov], create an HTML application using Flask framework in Python. 
+- **Description:** Using the API for the earthquakes which is provided by www.usgs.gov, create an HTML application using Flask framework in Python. 
 - **Folder:** [Link to project folder]
 
 ## Microprocessors and Applications
