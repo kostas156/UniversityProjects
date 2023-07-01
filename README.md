@@ -19,6 +19,9 @@
 6. [Algorithms and Complexity](#subject-6) (Pending)
     - RNA Secondary Structure
     - K-Center Problem Implementations
+7. [Digital Signal Processing](#subject-5) (Pending)
+    - Wiener Filter Implementations in MATLAB
+
 
 ## Software Engineering
 
