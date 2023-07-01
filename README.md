@@ -8,7 +8,7 @@
 
 - [1. Software Engineering](#software-engineering) (Pending)
   - [Earthqake Information Website with API](#project-11)
-- [2. Microprocessors and Applications](#microprocessors-and-applications) (Pending)
+- [Microprocessors and Applications](#microprocessors-and-applications) (Pending)
   - [Project 2.1](#project-21)
 - [3. Integrated Circuits](#subject-3) (Pending)
   - [Tic Tac Toe Game using SystemVerilog](#project-31)
@@ -32,15 +32,9 @@
 
 ### 🚀 Project 2.1
 
-- **Project Name:** [Number convertion function in ARM Processor]
+- **Project Name:** Number convertion function in ARM Processor
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
 - **Folder:** [Microprocessors](/Microprocessors)
-
-### 🚀 Project 2.2
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
 
 ## 📖 Subject 3
 
