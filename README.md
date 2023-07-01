@@ -8,7 +8,7 @@
 ## 📚 Table of Contents
 
 1. [Software Engineering](#software-engineering) (Pending)
-    - Earthqake Information Website with API
+    - Earthquake Information Website with API
 2. [Microprocessors and Applications](#microprocessors-and-applications)
     - Number convertion in ARM Processor
 3. [Integrated Circuits](#subject-3) (Pending)
@@ -26,10 +26,10 @@
 
 ## Software Engineering
 
-### 🚀 Project 1.1
+### 🚀 Earthquake Information Website using API
 
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Project Name:** Earthquake Website
+- **Description:** Using the API for the earthquakes which is provided by [www.usgs.gov], create an HTML application using Flask framework in Python. 
 - **Folder:** [Link to project folder]
 
 ## Microprocessors and Applications
