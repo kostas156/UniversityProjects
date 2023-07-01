@@ -20,7 +20,7 @@
   - [RNA Secondary Structure](#project-31)
   - [K-Center Problem Implementations](#project-32)
 
-## 📖 Software Engineering
+## Software Engineering
 
 ### 🚀 Project 1.1
 
@@ -28,7 +28,7 @@
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## 📖 Microprocessors and Applications <a id=“microprocessors-and-applications”></a>
+## Microprocessors and Applications
 
 ### 🚀 Project 2.1
 
@@ -36,7 +36,7 @@
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
 - **Folder:** [Microprocessors](/Microprocessors)
 
-## 📖 Subject 3
+## Subject 3
 
 ### 🚀 Project 3.1
 
