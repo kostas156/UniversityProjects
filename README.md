@@ -6,17 +6,17 @@
 
 ## 📚 Table of Contents
 
-- [1. Software Engineering](#software-engineering) (Pending)
+1. [Software Engineering](#software-engineering) (Pending)
   - [Earthqake Information Website with API](#project-11)
-- [Microprocessors and Applications](#microprocessors-and-applications)
+2. [Microprocessors and Applications](#microprocessors-and-applications)
   - [Project 2.1](#project-21)
-- [3. Integrated Circuits](#subject-3) (Pending)
+3. [Integrated Circuits](#subject-3) (Pending)
   - [Tic Tac Toe Game using SystemVerilog](#project-31)
-- [4. Databases](#subject-4) (Pending)
+4. [Databases](#subject-4) (Pending)
   - [Grading System Website with MySQL Database](#project-31)
-- [5. Computational Intelligence](#subject-5) (Pending)
+5. [Computational Intelligence](#subject-5) (Pending)
   - [Knapsack Problem using Genetic Algorithm](#project-31)
-- [6. Algorithms and Complexity](#subject-6) (Pending)
+6. [Algorithms and Complexity](#subject-6) (Pending)
   - [RNA Secondary Structure](#project-31)
   - [K-Center Problem Implementations](#project-32)
 
