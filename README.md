@@ -2,7 +2,7 @@
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05zaqo-s3g7aZ3MGTTq1AnDa1PWw-Nvo3pfMKMvd4hepTgQTUp1wAldpJ3UTtS3n0Kl8" alt="University Logo" width="200">
   <h1>University Projects Repository</h1>
   <p>🎓 Showcase of my university projects for my CV 🚀</p>
-  <p>All projects' reports are in Greek. 🇬🇷</p>
+  <p>All projects' reports are in Greek.</p>
 </div>
 
 ## 📚 Table of Contents
