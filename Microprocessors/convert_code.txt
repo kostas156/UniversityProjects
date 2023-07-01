@@ -1,0 +1,77 @@
+__asm void convert_to_dec_hex(int *nums_to_convert)
+{
+	MOVS R4, #0
+	MOVS R10, #0
+	ADDS R12, R4, #0x0304
+	ADDS R11, R4, #0x0302
+
+loop:
+	LDRB R1, [R0, R10]
+
+hex:
+	MOVS R2, R1
+	LSLS R2, #28
+	LSRS R2, #28
+	MOVS R3, R1
+	LSRS R3, #4
+	STRB R2, [R12]
+	SUBS R12, R12, #1
+	STRB R3, [R12]
+
+	MOVS R5, #0
+	MOVS R6, #0
+
+dec:
+	CMP R1, #10
+	BLO one_digit
+	SUBS R1, R1, #10
+	ADDS R5, R5, #1
+	B dec
+
+one_digit:
+	STRB R1, [R11]
+	SUBS R11, R11, #1
+	CMP R5, #0
+	BEQ fin001
+
+secthird_digit:
+	CMP R5, #10
+	BLO fin110
+	SUBS R5, R5, #10
+	ADDS R6, R6, #1
+	B secthird_digit
+
+fin001:
+	STRB R5, [R11]
+	SUBS R11, R11, #1
+	STRB R6, [R11]
+
+	ADDS R11, R11, #7
+	ADDS R12, R12, #6
+	ADDS R10, R10, #1
+	CMP R10, #5
+	BLO loop
+
+	BX LR
+
+fin110:
+	STRB R5, [R11]
+	SUBS R11, R11, #1
+	STRB R6, [R11]
+
+	ADDS R11, R11, #7
+	ADDS R12, R12, #6
+	ADDS R10, R10, #1
+	CMP R10, #5
+	BLO loop
+
+	BX LR
+}
+
+
+
+int main(void)
+{
+	int nums[] = {25, 4, 123, 255, 187};
+	convert_to_dec_hex(&nums);
+}
