@@ -8,7 +8,7 @@
 
 - [1. Software Engineering](#software-engineering) (Pending)
   - [Earthqake Information Website with API](#project-11)
-- [Microprocessors and Applications](#Microprocessors-and-Applications) (Pending)
+- [Microprocessors and Applications](#📖-microprocessors-and-applications) (Pending)
   - [Project 2.1](#project-21)
 - [3. Integrated Circuits](#subject-3) (Pending)
   - [Tic Tac Toe Game using SystemVerilog](#project-31)
