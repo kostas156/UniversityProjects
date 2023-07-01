@@ -6,37 +6,53 @@
 
 ## 📚 Table of Contents
 
-- [Project 1](#project-1)
-- [Project 2](#project-2)
-- [Project 3](#project-3)
-- [Project 4](#project-4)
-- [Project 5](#project-5)
+- [Subject 1](#subject-1)
+  - [Project 1.1](#project-11)
+  - [Project 1.2](#project-12)
+- [Subject 2](#subject-2)
+  - [Project 2.1](#project-21)
+  - [Project 2.2](#project-22)
+- [Subject 3](#subject-3)
+  - [Project 3.1](#project-31)
+  - [Project 3.2](#project-32)
 
-## 🚀 Project 1
+## 📖 Subject 1
 
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-## 🚀 Project 2
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-## 🚀 Project 3
+### 🚀 Project 1.1
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## 🚀 Project 4
+### 🚀 Project 1.2
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## 🚀 Project 5
+## 📖 Subject 2
+
+### 🚀 Project 2.1
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+### 🚀 Project 2.2
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+## 📖 Subject 3
+
+### 🚀 Project 3.1
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+### 🚀 Project 3.2
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
