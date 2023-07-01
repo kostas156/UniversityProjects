@@ -6,17 +6,17 @@
 
 ## 📚 Table of Contents
 
-- [Software Engineering](subject-1) (Pending)
+- [1. Software Engineering](subject-1) (Pending)
   - [Earthqake Information Website with API](#project-11)
-- [Microprocessors and Applications](#subject-2) (Pending)
+- [2. Microprocessors and Applications](#subject-2) (Pending)
   - [Project 2.1](#project-21)
-- [Integrated Circuits](#subject-3) (Pending)
+- [3. Integrated Circuits](#subject-3) (Pending)
   - [Tic Tac Toe Game using SystemVerilog](#project-31)
-- [Databases](#subject-4) (Pending)
+- [4. Databases](#subject-4) (Pending)
   - [Grading System Website with MySQL Database](#project-31)
-- [Computational Intelligence](#subject-5) (Pending)
+- [5. Computational Intelligence](#subject-5) (Pending)
   - [Knapsack Problem using Genetic Algorithm](#project-31)
-- [Algorithms and Complexity](#subject-6) (Pending)
+- [6. Algorithms and Complexity](#subject-6) (Pending)
   - [RNA Secondary Structure](#project-31)
   - [K-Center Problem Implementations](#project-32)
 
@@ -32,8 +32,8 @@
 
 ### 🚀 Project 2.1
 
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Project Name:** [Number convertion function in ARM Processor]
+- **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
 - **Folder:** [Link to project folder]
 
 ### 🚀 Project 2.2
