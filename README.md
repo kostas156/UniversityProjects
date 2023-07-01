@@ -6,9 +6,9 @@
 
 ## 📚 Table of Contents
 
-- [1. Software Engineering](subject-1) (Pending)
+- [1. Software Engineering](#software-engineering) (Pending)
   - [Earthqake Information Website with API](#project-11)
-- [2. Microprocessors and Applications](#subject-2) (Pending)
+- [2. Microprocessors and Applications](#microprocessors-and-applications) (Pending)
   - [Project 2.1](#project-21)
 - [3. Integrated Circuits](#subject-3) (Pending)
   - [Tic Tac Toe Game using SystemVerilog](#project-31)
@@ -26,9 +26,9 @@
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
+- **Folder:** [Microprocessors]
 
-## 📖 Subject 2
+## 📖 Microprocessors and Applications
 
 ### 🚀 Project 2.1
 
