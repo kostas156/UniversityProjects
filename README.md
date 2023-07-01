@@ -26,7 +26,7 @@
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Microprocessors]
+- **Folder:** [Link to project folder]
 
 ## 📖 Microprocessors and Applications
 
@@ -34,7 +34,7 @@
 
 - **Project Name:** [Number convertion function in ARM Processor]
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
-- **Folder:** [Link to project folder]
+- **Folder:** [Microprocessors](UniversityProjects/Microprocessors)
 
 ### 🚀 Project 2.2
 
