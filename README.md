@@ -17,7 +17,7 @@
     - Grading System Website with MySQL Database
 5. [Computational Intelligence](#subject-5) (Pending)
     - Knapsack Problem using Genetic Algorithm
-6. [Algorithms and Complexity](#subject-6) (Pending)
+6. [Algorithms and Complexity](#algorithms-and-complexity) (Pending)
     - RNA Secondary Structure
     - K-Center Problem Implementations
 7. [Digital Signal Processing](#subject-5) (Pending)
@@ -47,6 +47,48 @@
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
+
+### 🚀 Project 3.2
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+## Subject 4
+
+### 🚀 Project 3.1
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+### 🚀 Project 3.2
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+## Subject 5
+
+### 🚀 Project 3.1
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+### 🚀 Project 3.2
+
+- **Project Name:** [Project Name]
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
+
+## Algorithms and Complexity
+
+### 🚀 RNA Secondary Structure
+
+- **Project Name:** RNA Secondary Structure
+- **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dybamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
+- **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Strucure)
 
 ### 🚀 Project 3.2
 
