@@ -34,7 +34,7 @@
 
 ## Microprocessors and Applications
 
-### 🚀 Project 2.1
+### 🚀 Binary to Decimal and Hexadecimal
 
 - **Project Name:** Number convertion function in ARM Processor
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
