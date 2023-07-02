@@ -88,7 +88,7 @@
 
 - **Project Name:** RNA Secondary Structure
 - **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dybamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
-- **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Strucure)
+- **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Structure)
 
 ### 🚀 Project 3.2
 
