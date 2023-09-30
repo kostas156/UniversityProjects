@@ -34,7 +34,7 @@
 
 ## Microprocessors and Applications
 
-### 🚀 Project 2.1
+### 🚀 Binary to Decimal and Hexadecimal
 
 - **Project Name:** Number convertion function in ARM Processor
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
@@ -88,7 +88,7 @@
 
 - **Project Name:** RNA Secondary Structure
 - **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dybamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
-- **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Strucure)
+- **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Structure)
 
 ### 🚀 Project 3.2
 
