@@ -13,3 +13,5 @@ After that you can use your browser and go to localhost:5001. The homepage will 
 Then you can browse to watch all the possible pages. (Everything that we have added to the pages is working)
 ![Table](https://github.com/kostas156/UniversityProjects/blob/main/Software_Engineering/table_with_all_earthquakes.png)
 ![Earthquake number 2](https://github.com/kostas156/UniversityProjects/blob/main/Software_Engineering/earthquake_with_id_2.png)
+
+I have added the whole project but my work is inside the file frontend.py and all the files of the templates folder.
