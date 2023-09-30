@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Earthquake Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">
+    <style type="text/css">
+        .header-container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #35424a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #599fff 3px solid;
+        }
+
+        header a{
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+
+        header li{
+            float: left;
+            display: inline;
+            padding: 0 20px;
+        }
+
+        header #branding{
+            float: left;
+        }
+
+        header #branding h1{
+            margin: 0;
+        }
+
+        header nav{
+            float: right;
+            margin-top: 14px;
+            margin-right: 145px;
+        }
+
+        header .highlight, header .current a{
+            color: #599fff;
+            font-weight: bold;
+        }
+
+        header a:hover{
+            color: #ccc;
+            font-weight: bold;
+        }
+
+        h2{
+            margin-top: 25px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .article {
+            padding-top: 10px;
+            padding-bottom: 5px;
+            background-color: grey;
+            margin-left: auto;
+            margin-right: auto;
+            width: 75%;
+        }
+
+        .art-text{
+            font-size: 24px
+        }
+
+        a{
+            color: white;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a:active{
+            text-decoration: underline;
+        }
+
+        img{
+            margin-top: 10px;
+        }
+
+        footer{
+            padding: 30px;
+            bottom: 0;
+            color: #fff;
+            background-color: #35424a;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div id="branding">
+                <h1><span class="highlight">Earthquake</span> Tracker</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="http://127.0.0.1:5001">Home</a></li>
+                    <li><a href="http://127.0.0.1:5001/table">Table</a></li>
+                    <li><a href="http://127.0.0.1:5001/about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="art-container">
+
+        <h2>News</h2>
+        
+        <div class="article">
+            <a href="http://127.0.0.1:5001/table/1">
+
+                <h4 class="art-text">LATEST EARTHQUAKE: </h4>
+                <p class="art-text">{{earthquakes['place']}}</p>
+
+            </a>
+        </div>
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/003/755/762/non_2x/world-map-showing-tectonic-plates-boundaries-free-vector.jpg" width="100%">
+        </div>
+        
+    </div>
+
+    <footer>
+        <p>Team 4, Copyright &copy; 2022</p>
+    </footer>
+
+
+</body>
+</html>
