@@ -7,7 +7,7 @@
 
 ## 📚 Table of Contents
 
-1. [Software Engineering](#software-engineering) (Pending)
+1. [Software Engineering](#software-engineering)
     - Earthquake Information Website with API
 2. [Microprocessors and Applications](#microprocessors-and-applications)
     - Number convertion in ARM Processor
