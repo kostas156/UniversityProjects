@@ -15,3 +15,5 @@ Then you can browse to watch all the possible pages. (Everything that we have ad
 ![Earthquake number 2](https://github.com/kostas156/UniversityProjects/blob/main/Software_Engineering/earthquake_with_id_2.png)
 
 I have added the whole project but my work is inside the file frontend.py and all the files of the templates folder.
+
+All the HTML, CSS was written by hand. (No template was used)
