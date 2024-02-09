@@ -92,7 +92,7 @@ This repository is licensed under the [MIT License](LICENSE).
 
 ## 📧 Contact
 
-If you have any questions or would like to get in touch, feel free to reach out to me at [kon.iatrou06@gmail.com].
+If you have any questions or would like to get in touch, feel free to reach out to me at **kon.iatrou06@gmail.com**.
 
 <div align="center">
   <sub>Built by Konstantinos Iatrou</sub>
