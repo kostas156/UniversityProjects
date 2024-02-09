@@ -40,7 +40,7 @@
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
 - **Folder:** [Microprocessors](/Microprocessors)
 
-## Subject 3
+## Integrated Circuits
 
 ### 🚀 Project 3.1
 
@@ -48,35 +48,17 @@
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-### 🚀 Project 3.2
+## Databases
+
+### 🚀 Project 4.1
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## Subject 4
+## Computational Intelligence
 
-### 🚀 Project 3.1
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-### 🚀 Project 3.2
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-## Subject 5
-
-### 🚀 Project 3.1
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-### 🚀 Project 3.2
+### 🚀 Project 5.1
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
@@ -90,11 +72,19 @@
 - **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dybamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
 - **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Structure)
 
-### 🚀 Project 3.2
+### 🚀 Project 6.2
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
+
+## Digital Signal Processing
+
+### 🚀 Wiener Filter Implementation
+
+- **Project Name:** Wiener Filter Implementation
+- **Description:** Given a audio file we have to add white sound in that and try create and apply a Wiener filter with different techniques and with different given data for each subtask.
+- **Folder:** [DSP](/DSP)
 
 ## 📝 License
 
