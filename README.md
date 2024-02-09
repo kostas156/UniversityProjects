@@ -20,7 +20,7 @@
 6. [Algorithms and Complexity](#algorithms-and-complexity) (Pending)
     - RNA Secondary Structure
     - K-Center Problem Implementations
-7. [Digital Signal Processing](#subject-5) (Pending)
+7. [Digital Signal Processing](#digital-signal-processing) (Pending)
     - Wiener Filter Implementations in MATLAB
 
 
