@@ -13,7 +13,7 @@
     - Number convertion in ARM Processor
 3. [Integrated Circuits](#subject-3) (Pending)
     - Tic Tac Toe Game using SystemVerilog
-4. [Databases](#subject-4) (Pending)
+4. [Databases](#databases) (Pending)
     - Grading System Website with MySQL Database
 5. [Computational Intelligence](#subject-5) (Pending)
     - Knapsack Problem using Genetic Algorithm
