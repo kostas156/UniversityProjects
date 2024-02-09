@@ -40,7 +40,7 @@
 - **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
 - **Folder:** [Microprocessors](/Microprocessors)
 
-## Subject 3
+## Integrated Circuits
 
 ### 🚀 Project 3.1
 
@@ -48,35 +48,17 @@
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-### 🚀 Project 3.2
+## Databases
+
+### 🚀 Project 4.1
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## Subject 4
-
-### 🚀 Project 3.1
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-### 🚀 Project 3.2
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-## Subject 5
+## Computational Intelligence
 
 ### 🚀 Project 5.1
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
-
-### 🚀 Project 5.2
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
