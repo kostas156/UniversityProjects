@@ -1,4 +1,4 @@
 # Clarifications
 
-The code is given in .txt file because access wan not given to Keil Uvision software.
+The code is given in .txt file because access was not given to Keil Uvision software by the professor or the university.
 
