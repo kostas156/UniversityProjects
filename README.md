@@ -10,35 +10,39 @@
 1. [Software Engineering](#software-engineering)
     - Earthquake Information Website with API
 2. [Microprocessors and Applications](#microprocessors-and-applications)
-    - Number convertion in ARM Processor
-3. [Integrated Circuits](#subject-3) (Pending)
+    - Number conversion in ARM Processor
+3. [Integrated Circuits](#integrated-circuits) (Pending)
     - Tic Tac Toe Game using SystemVerilog
 4. [Databases](#databases) (Pending)
     - Grading System Website with MySQL Database
-5. [Computational Intelligence](#subject-5) (Pending)
+5. [Computational Intelligence](#computational-intelligence)
     - Knapsack Problem using Genetic Algorithm
-6. [Algorithms and Complexity](#algorithms-and-complexity) (Pending)
+    - Function Approximation using Neural Networks (MLP)
+    - Fuzzy Cruise Control System
+6. [Pattern Recognition](#pattern-recognition)
+    - Bayesian Classification & Decision Theory
+    - Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA/LDA)
+7. [Algorithms and Complexity](#algorithms-and-complexity)
     - RNA Secondary Structure
     - K-Center Problem Implementations
-7. [Digital Signal Processing](#digital-signal-processing) (Pending)
-    - Wiener Filter Implementations in MATLAB
-
+8. [Digital Signal Processing](#digital-signal-processing) (Pending)
+    - Wiener Filter Implementation
 
 ## Software Engineering
 
-### 🚀 Earthquake Information Website using API
+### 🚀 Earthquake Information Website with API
 
-- **Project Name:** Earthquake Website
-- **Description:** Every team created a small Website that shows information about the most recent Earthquakes. HTML, CSS, Python (Flask framework specificly). The project is divided in three parts Frontend, Backend, API requests with python. A small database was used but no SQL was used to do so. The database was managed mostly using PhpMyAdmin.
-- **Folder:** [Software_Engineering](/Software_Engineering)
+- **Project Name:** Earthquake Information Website with API
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
 
 ## Microprocessors and Applications
 
-### 🚀 Binary to Decimal and Hexadecimal
+### 🚀 Number conversion in ARM Processor
 
-- **Project Name:** Number convertion function in ARM Processor
-- **Description:** Write a function in assembly in Keil Vision for M0 Arm processor which will convert 5 number in specific positions in memory from binary to decimal and hexadecimal. The exact exercise is given in a pdf file.
-- **Folder:** [Microprocessors](/Microprocessors)
+- **Project Name:** Number conversion in ARM Processor
+- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
+- **Folder:** [Link to project folder]
 
 ## Integrated Circuits
 
@@ -50,26 +54,42 @@
 
 ## Databases
 
-### 🚀 University Administration System
-
-- **Project Name:** University Administration System
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Databases](/Databases)
-
-## Computational Intelligence
-
-### 🚀 Project 5.1
+### 🚀 Project 4.1
 
 - **Project Name:** [Project Name]
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
+
+## Computational Intelligence
+
+### 🚀 Knapsack Problem using Genetic Algorithm
+- **Description:** Implementation of a Genetic Algorithm (GA) in MATLAB to solve and maximize the total value of a 100-item 0-1 Knapsack Problem under capacity constraints. Applied critical performance optimization techniques (fitness score caching, removing redundant evaluation/import calls), drastically reducing execution runtime from 50-60 minutes down to just **3 – 4.5 seconds**.
+- **Folder:** [Computational_Intelligence/Project1_Genetic_Algorithms]
+
+### 🚀 Function Approximation using Neural Networks (MLP)
+- **Description:** Training a Multi-layer Perceptron (MLP) Feedforward Neural Network with 4 hidden layers and a `[42, 28, 13, 7, 1]` topology in MATLAB to approximate a non-linear mathematical function of two variables. Utilized Gradient Descent (`traingd`) combined with Early Stopping to successfully prevent premature overfitting.
+- **Folder:** [Computational_Intelligence/Project2_Neural_Networks](Computational_Intelligence/Project2)
+
+### 🚀 Fuzzy Cruise Control System
+- **Description:** Design and simulation of a Mamandani Fuzzy Inference System (FIS) in MATLAB to automatically control and stabilize a vehicle's cruising speed at 120 km/h. Modeled using tailored membership functions (Gaussian profiles combined with narrow triangular shapes (`trimf`)) for highly precise acceleration handling.
+- **Folder:** [Computational_Intelligence/Project3](/Computational_Intelligence/Project3)
+
+## Pattern Recognition
+
+### 🚀 Bayesian Classification & Decision Theory
+- **Description:** A series of 5 core tasks developed in Python (Jupyter Notebooks) covering: Bayesian email spam classification, mathematical definition of decision regions and experimental evaluation of minimal Bayes Risk, 3-class Multivariate Gaussian classifiers, theoretical and graphic worst-case error bound analysis, and Recursive Bayesian Parameter Estimation handled via Beta Distribution modeling.
+- **Folder:** [Pattern_Recognition/Project1](/Pattern_Recognition/Project1)
+
+### 🚀 Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA/LDA)
+- **Description:** Implementation of Non-Parametric Probability Density Estimation utilizing Parzen Windows (Kernel Density Estimation) to study the smoothing factor $h_N$. Training Linear and RBF Support Vector Machines (SVM) to evaluate and plot decision boundaries and Support Vectors. Dimensionality reduction and multi-feature evaluation executed over the Wine Dataset using Principal Component Analysis (PCA) and Fisher's Linear Discriminant Analysis (LDA), benchmarked via 10-fold Cross-Validation and Confusion Matrices.
+- **Folder:** [Pattern_Recognition/Project2](/Pattern_Recognition/Project2)
 
 ## Algorithms and Complexity
 
 ### 🚀 RNA Secondary Structure
 
 - **Project Name:** RNA Secondary Structure
-- **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dybamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
+- **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dynamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
 - **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Structure)
 
 ### 🚀 Project 6.2
