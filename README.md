@@ -78,11 +78,11 @@
 
 ### 🚀 Bayesian Classification & Decision Theory
 - **Description:** A series of 5 core tasks developed in Python (Jupyter Notebooks) covering: Bayesian email spam classification, mathematical definition of decision regions and experimental evaluation of minimal Bayes Risk, 3-class Multivariate Gaussian classifiers, theoretical and graphic worst-case error bound analysis, and Recursive Bayesian Parameter Estimation handled via Beta Distribution modeling.
-- **Folder:** [Pattern_Recognition/Project1](/Pattern_Recognition/Project1)
+- **Folder:** [Pattern_Recognition/Project1](/Pattern_Recognition/Project_1_Bayesian_Theory)
 
 ### 🚀 Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA/LDA)
 - **Description:** Implementation of Non-Parametric Probability Density Estimation utilizing Parzen Windows (Kernel Density Estimation) to study the smoothing factor $h_N$. Training Linear and RBF Support Vector Machines (SVM) to evaluate and plot decision boundaries and Support Vectors. Dimensionality reduction and multi-feature evaluation executed over the Wine Dataset using Principal Component Analysis (PCA) and Fisher's Linear Discriminant Analysis (LDA), benchmarked via 10-fold Cross-Validation and Confusion Matrices.
-- **Folder:** [Pattern_Recognition/Project2](/Pattern_Recognition/Project2)
+- **Folder:** [Pattern_Recognition/Project2](/Pattern_Recognition/Project_2_Advanced_Classification)
 
 ## Algorithms and Complexity
 
