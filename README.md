@@ -60,19 +60,19 @@
 - **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
 - **Folder:** [Link to project folder]
 
-## Computational Intelligence
+## Computer Intelligence
 
 ### 🚀 Knapsack Problem using Genetic Algorithm
 - **Description:** Implementation of a Genetic Algorithm (GA) in MATLAB to solve and maximize the total value of a 100-item 0-1 Knapsack Problem under capacity constraints. Applied critical performance optimization techniques (fitness score caching, removing redundant evaluation/import calls), drastically reducing execution runtime from 50-60 minutes down to just **3 – 4.5 seconds**.
-- **Folder:** [Computational_Intelligence/Project1_Genetic_Algorithms]
+- **Folder:** [Computer_Intelligence/Project1_Genetic_Algorithms](/Computer_Intelligence/Project1_Genetic_Algorithms)
 
 ### 🚀 Function Approximation using Neural Networks (MLP)
 - **Description:** Training a Multi-layer Perceptron (MLP) Feedforward Neural Network with 4 hidden layers and a `[42, 28, 13, 7, 1]` topology in MATLAB to approximate a non-linear mathematical function of two variables. Utilized Gradient Descent (`traingd`) combined with Early Stopping to successfully prevent premature overfitting.
-- **Folder:** [Computational_Intelligence/Project2_Neural_Networks](Computational_Intelligence/Project2)
+- **Folder:** [Computer_Intelligence/Project_2_Neural_Networks](/Computer_Intelligence/Project_2_Neural_Networks)
 
 ### 🚀 Fuzzy Cruise Control System
 - **Description:** Design and simulation of a Mamandani Fuzzy Inference System (FIS) in MATLAB to automatically control and stabilize a vehicle's cruising speed at 120 km/h. Modeled using tailored membership functions (Gaussian profiles combined with narrow triangular shapes (`trimf`)) for highly precise acceleration handling.
-- **Folder:** [Computational_Intelligence/Project3](/Computational_Intelligence/Project3)
+- **Folder:** [Computer_Intelligence/Project_3_Fuzzy_Logic](/Computer_Intelligence/Project_3_Fuzzy_Logic)
 
 ## Pattern Recognition
 
