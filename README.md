@@ -15,7 +15,7 @@
     - Tic Tac Toe Game using SystemVerilog
 4. [Databases](#databases) (Pending)
     - Grading System Website with MySQL Database
-5. [Computational Intelligence](#computational-intelligence)
+5. [Computer Intelligence](#computer-intelligence)
     - Knapsack Problem using Genetic Algorithm
     - Function Approximation using Neural Networks (MLP)
     - Fuzzy Cruise Control System
