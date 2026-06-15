@@ -22,10 +22,12 @@
 6. [Pattern Recognition](#pattern-recognition)
     - Bayesian Classification & Decision Theory
     - Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA/LDA)
+    - Clustering, Feature Selection (PCA) & Multidimensional Scaling (MDS)
+    - Final Term Project: Face Mask Detection & Chemical Binding Prediction
 7. [Algorithms and Complexity](#algorithms-and-complexity)
     - RNA Secondary Structure
     - K-Center Problem Implementations
-8. [Digital Signal Processing](#digital-signal-processing) (Pending)
+8. [Digital Signal Processing](#digital-signal-processing)
     - Wiener Filter Implementation
 
 ## Software Engineering
@@ -83,6 +85,14 @@
 ### 🚀 Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA/LDA)
 - **Description:** Implementation of Non-Parametric Probability Density Estimation utilizing Parzen Windows (Kernel Density Estimation) to study the smoothing factor $h_N$. Training Linear and RBF Support Vector Machines (SVM) to evaluate and plot decision boundaries and Support Vectors. Dimensionality reduction and multi-feature evaluation executed over the Wine Dataset using Principal Component Analysis (PCA) and Fisher's Linear Discriminant Analysis (LDA), benchmarked via 10-fold Cross-Validation and Confusion Matrices.
 - **Folder:** [Pattern_Recognition/Project_2_Advanced_Classification](/Pattern_Recognition/Project_2_Advanced_Classification)
+
+### 🚀 Clustering, Feature Selection (PCA) & Multidimensional Scaling (MDS)
+- **Description:** Unsupervised learning pipeline evaluated on the morphological Seeds dataset using K-Means and Hierarchical Agglomerative Clustering across Euclidean and Cosine distances, benchmarked via Rand Index and Silhouette Coefficients. Features were optimized using PCA to preserve variance targets ($90\%$ & $95\%$). Includes coordinate map reconstruction from raw air distance matrices via Classical Multidimensional Scaling (MDS) in 2D and 3D spaces to study earth curvature constraints.
+- **Folder:** [Pattern_Recognition/Project_3_Clustering_MDS](/Pattern_Recognition/Project_3_Clustering_MDS)
+
+### 🚀 Final Term Project: Face Mask Detection & Chemical Binding Prediction
+- **Description:** Two-part advanced term project. Part 1 develops an automated Image Classification pipeline using custom Deep Convolutional Neural Networks (CNNs) and Transfer Learning via ResNet-18 for face mask compliance detection, optimized using fine-tuned classification boundaries for edge-case sorting. Part 2 addresses pharmacological drug discovery by applying PCA feature compaction and automated Bayesian search to tune deep MLPs, SVM regressions, and soft/hard Ensemble Voting models predicting molecular binding affinities, validated via AUC-ROC evaluation.
+- **Folder:** [Pattern_Recognition/Final_Term_Project](/Pattern_Recognition/Final_Term_Project)
 
 ## Algorithms and Complexity
 
