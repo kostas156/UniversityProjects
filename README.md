@@ -56,11 +56,11 @@
 
 ## Databases
 
-### 🚀 Project 4.1
+### 🚀 Grading System Website with MySQL Database
 
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
+- **Project Name:** UniSystem - University Administration & Grading Information System
+- **Description:** A comprehensive web-based management portal matching a MySQL relational database with a PHP/Bootstrap frontend. Features cryptographic session management, role-based access for students/professors/secretariat, dynamic DataTables filtering, and automated GPA/ECTS calculations.
+- **Folder:** [Databases](/Databases)
 
 ## Computer Intelligence
 
