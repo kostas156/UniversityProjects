@@ -1,38 +1,38 @@
-# Επίλυση του Προβλήματος του Σακιδίου (Knapsack Problem) με Γενετικούς Αλγορίθμους
+# Solving the Knapsack Problem using Genetic Algorithms
 
-Αυτό το repository περιλαμβάνει την υλοποίηση ενός **Γενετικού Αλγορίθμου (Genetic Algorithm - GA)** σε περιβάλλον **MATLAB** για την επίλυση του προβλήματος του Σακιδίου (0-1 Knapsack Problem). Η εργασία αναπτύχθηκε στο πλαίσιο του μαθήματος **Υπολογιστική Νοημοσύνη** του Τμήματος Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών (ΔΠΘ).
+This repository contains a **Genetic Algorithm (GA)** implementation developed in **MATLAB** to solve the 0-1 Knapsack Problem[cite: 60]. This project was developed as part of the **Computational Intelligence** course at the Department of Electrical and Computer Engineering of the Democritus University of Thrace (DUTH)[cite: 60].
 
-## 📝 Περιγραφή Προβλήματος
-Δίνεται ένα σύνολο 100 διαφορετικών αντικειμένων, όπου κάθε αντικείμενο χαρακτηρίζεται από το βάρος (size) και την αξία (value) του. Στόχος του αλγορίθμου είναι η επιλογή του βέλτιστου συνδυασμού αντικειμένων που μεγιστοποιεί τη συνολική αξία, χωρίς το συνολικό βάρος να ξεπερνά το προκαθορισμένο όριο του σακιδίου (Capacity).
+## 📝 Problem Description
+The problem provides a set of 100 distinct items, where each item is characterized by its weight (size) and its value[cite: 60]. The goal of the algorithm is to select the optimal combination of items that maximizes the total value, without exceeding the predefined weight limit of the knapsack (Capacity)[cite: 60].
 
-Οι λύσεις αναπαρίστανται ως δυαδικά διανύσματα (χρωμοσώματα) μήκους 100, όπου η τιμή `1` υποδηλώνει την επιλογή του αντικειμένου και η τιμή `0` την απόρριψή του.
+Solutions are represented as binary vectors (chromosomes) with a length of 100, where a value of `1` indicates the item is selected, and `0` indicates it is rejected[cite: 60].
 
-## 🛠️ Αρχιτεκτονική & Δομή Κώδικα
-Η υλοποίηση είναι σπονδυλωτή (modular) και αποτελείται από τα εξής αρχεία MATLAB (`.m`):
+## 🛠️ Architecture & Code Structure
+The implementation is modular and consists of the following MATLAB (`.m`) files[cite: 60]:
 
-* **`solveKnapsack.m`**: Η κύρια συνάρτηση (driver script) που αρχικοποιεί τον πληθυσμό, εκτελεί τον βρόχο των γενεών (iterations) και παράγει τα διαγράμματα σύγκλισης (Average & Max Fitness).
-* **`imp_vals.m`**: Φορτώνει τα δεδομένα των αντικειμένων (βάρη, αξίες, χωρητικότητα σακιδίου) από το αρχείο εισόδου `knapsack.xls`.
-* **`fit_co.m`**: Η συνάρτηση καταλληλότητας (Fitness Function) που αξιολογεί κάθε λύση με βάση τη συνολική της αξία. Αν μια λύση παραβιάζει το όριο βάρους, δέχεται ποινή (fitness = 0).
-* **`nextGeneration.m`**: Διαχειρίζεται τη μετάβαση στην επόμενη γενιά, εφαρμόζοντας ελιτισμό, επιλογή, διασταύρωση και μετάλλαξη.
-* **`myRouletteSel.m`**: Υλοποιεί τον μηχανισμό επιλογής γονέων με τη μέθοδο της **Ρουλέτας** (Roulette Wheel Selection).
-* **`crossover.m`**: Πραγματοποιεί τη διασταύρωση των γονέων για τη δημιουργία απογόνων.
-* **`mutation.m`**: Εφαρμόζει τυχαία μετάλλαξη (bit-flip) στους απογόνους με βάση μια πιθανότητα μετάλλαξης.
-* **`pass_n_toNextGen.m`**: Υλοποιεί τον **Ελιτισμό**, διασφαλίζοντας ότι οι $n$ κορυφαίες λύσεις κάθε γενιάς περνούν αυτούσιες στην επόμενη.
-* **`test_final.m`**: Script για την εκτέλεση 50 διαδοχικών πειραμάτων (Monte Carlo) με σκοπό τη στατιστική αξιολόγηση της σταθερότητας και της ταχύτητας του αλγορίθμου.
+* **`solveKnapsack.m`**: The main function (driver script) that initializes the population, executes the generational loop (iterations), and generates convergence plots (Average & Max Fitness)[cite: 60].
+* **`imp_vals.m`**: Loads the item data (weights, values, and knapsack capacity) from the input file `knapsack.xls`[cite: 60].
+* **`fit_co.m`**: The fitness function that evaluates each solution based on its total value[cite: 60]. If a solution violates the weight limit, it receives a penalty (fitness = 0)[cite: 60].
+* **`nextGeneration.m`**: Manages the transition to the next generation by applying elitism, selection, crossover, and mutation[cite: 60].
+* **`myRouletteSel.m`**: Implements the parent selection mechanism using the **Roulette Wheel Selection** method[cite: 60].
+* **`crossover.m`**: Performs the crossover of parent chromosomes to generate offspring[cite: 60].
+* **`mutation.m`**: Applies random mutation (bit-flip) to the offspring based on a predefined mutation probability[cite: 60].
+* **`pass_n_toNextGen.m`**: Implements **Elitism**, ensuring that the top $n$ solutions of each generation pass directly and unaltered into the next generation[cite: 60].
+* **`test_final.m`**: A script designed to run 50 consecutive experiments (Monte Carlo simulations) for the statistical evaluation of the algorithm's stability and speed[cite: 60].
 
-## 🚀 Βελτιστοποιήσεις Απόδοσης (Performance Optimization)
-Κατά την ανάπτυξη του κώδικα εφαρμόστηκαν τεχνικές βελτιστοποίησης που μείωσαν δραστικά τον χρόνο εκτέλεσης:
-1.  **Μείωση επανακλήσεων**: Αποφεύχθηκε η εκτέλεση της `imp_vals()` μέσα στη Fitness Function.
-2.  **Caching του Fitness**: Η αξιολόγηση των χρωμοσωμάτων υπολογίζεται μία φορά ανά γενιά και περνάει ως παράμετρος εισόδου στις συναρτήσεις επιλογής (`myRouletteSel`) και ελιτισμού (`pass_n_toNextGen`).
+## 🚀 Performance Optimization
+During the development of the code, critical optimization techniques were applied to drastically reduce execution runtime[cite: 60]:
+1. **Reducing Redundant Calls**: Avoided executing `imp_vals()` inside the Fitness Function loop[cite: 60].
+2. **Fitness Caching**: Chromosome fitness evaluation is computed only once per generation and passed as an input parameter to the selection (`myRouletteSel`) and elitism (`pass_n_toNextGen`) functions[cite: 60].
 
-**Αποτέλεσμα:** Ο χρόνος εκτέλεσης μειώθηκε από **50-60 λεπτά** αρχικά, σε μόλις **3 – 4.5 δευτερόλεπτα** στην τελική έκδοση, διατηρώντας το ίδιο υψηλό ποσοστό επιτυχίας στην εύρεση της βέλτιστης λύσης.
+**Result:** The execution runtime was dramatically slashed from an initial **50–60 minutes** down to just **3 – 4.5 seconds** in the final optimized version, while maintaining the same high success rate in discovering the optimal solution[cite: 60].
 
-## 📊 Δεδομένα Εισόδου
-Τα δεδομένα των αντικειμένων βρίσκονται στο αρχείο:
-* `knapsack.xls` (Περιλαμβάνει τα βάρη, τις αξίες, τον στόχο βάρους και το μέγεθος του προβλήματος).
+## 📊 Input Data
+The item dataset is located in the following file:
+* `knapsack.xls` (Contains the item weights, values, target weight capacity, and the problem dimensions)[cite: 60].
 
-## 💻 Πώς να το τρέξετε
-1. Ανοίξτε τη MATLAB και ορίστε ως τρέχοντα φάκελο (Current Folder) τον κατάλογο του project.
-2. Για να εκτελέσετε μια απλή επίλυση και να δείτε τα γραφήματα σύγκλισης, πληκτρολογήστε στο Command Window:
-   ```matlab
+## 💻 How to Run
+1. Open MATLAB and set the project directory as your Current Folder[cite: 60].
+2. To run a single execution and view the convergence graphs, type the following command in the Command Window[cite: 60]:
+```matlab
    solveKnapsack();

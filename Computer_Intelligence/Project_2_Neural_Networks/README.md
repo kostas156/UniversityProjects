@@ -1,38 +1,38 @@
-# Προσέγγιση Συναρτήσεων με Τεχνητά Νευρωνικά Δίκτυα (Feedforward Neural Networks)
+# Function Approximation using Artificial Neural Networks (MLP)
 
-Αυτό το repository περιλαμβάνει την υλοποίηση ενός **Πολυστρωματικού Νευρωνικού Δικτύου (Multi-layer Perceptron - MLP)** σε περιβάλλον **MATLAB** για την προσέγγιση (regression/approximation) μιας μη γραμμικής συνάρτησης δύο μεταβλητών. Η εργασία αναπτύχθηκε στο πλαίσιο της 2ης εργασίας του μαθήματος **Υπολογιστική Νοημοσύνη** του Τμήματος Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών (ΔΠΘ).
+This repository contains the **Multi-layer Perceptron (MLP)** Neural Network implementation developed in **MATLAB** to solve a non-linear function approximation (regression) problem. This project was developed as part of the 2nd assignment for the **Computational Intelligence** course at the Department of Electrical and Computer Engineering of the Democritus University of Thrace (DUTH).
 
-## 📝 Περιγραφή Προβλήματος
-Στόχος είναι η εκπαίδευση ενός feedforward νευρωνικού δικτύου προκειμένου να προσεγγίσει με υψηλή ακρίβεια την παρακάτω συνάρτηση δύο μεταβλητών:
+## 📝 Problem Description
+The objective of this assignment is to train a feedforward neural network capable of mapping and approximating a non-linear mathematical function of two variables with high precision:
 
 $$f(x,y) = 0.7 \cdot e^{\cos(\pi x)} + 0.3 \cdot \cos(2\pi y)$$
 
-όπου οι μεταβλητές εισόδου ανήκουν στο διάστημα $x, y \in [-4, 4]$. Για την εκπαίδευση χρησιμοποιήθηκε πλέγμα σημείων (meshgrid) ως σύνολο δειγμάτων.
+where the input variables are bounded within the range $x, y \in [-4, 4]$. A total of 900 samples generated from a $30 \times 30$ grid layout (`meshgrid`) were utilized to train, validate, and evaluate the network's predictive capabilities.
 
-## 🛠️ Αρχιτεκτονική Δικτύου & Παράμετροι
-Η δομή του δικτύου ορίζεται και εκπαιδεύεται μέσω του αρχείου **`neuralNetProject.m`**:
+## 🛠️ Network Architecture & Hyperparameters
+The structural properties and training constraints of the deep network are fully configured inside **`neuralNetProject.m`**:
 
-* **Αρχιτεκτονική (Topology):** Ένα βαθύ δίκτυο με 4 κρυφά επίπεδα (Hidden Layers) και 1 επίπεδο εξόδου, με δομή επιπέδων: `[42, 28, 13, 7, 1]`.
-* **Συναρτήσεις Ενεργοποίησης (Activation Functions):** * Κρυφά επίπεδα: Υπερβολική εφαπτομένη (`tansig`) και Λογιστική σιγμοειδής (`logsig`).
-  * Επίπεδο εξόδου: Γραμμική συνάρτηση (`purelin`).
-* **Αλγόριθμος Εκπαίδευσης:** Gradient Descent (`traingd`) με ρυθμό μάθησης (learning rate) $\eta = 0.01$.
-* **Κριτήριο Απόδοσης:** Μέσο Τετραγωνικό Σφάλμα (Mean Squared Error - MSE) με στόχο (goal) `1e-4`.
-* **Διαχωρισμός Δεδομένων (Data Splitting):** Τυχαίος διαχωρισμός (`dividerand`) σε:
-  * **80%** για Εκπαίδευση (Training set)
-  * **10%** για Επαλήθευση (Validation set)
-  * **10%** για Έλεγχο (Test set)
+* **Topology (Layer Structure):** A deep feedforward structure consisting of 4 Hidden Layers and 1 Output Layer, mapped out as: `[42, 28, 13, 7, 1]`.
+* **Activation Functions:** * *Hidden Layers:* Hyperbolic Tangent Sigmoid (`tansig`) and Logistic Sigmoid (`logsig`) functions.
+  * *Output Layer:* Pure Linear (`purelin`) activation function.
+* **Training Algorithm:** Gradient Descent (`traingd`) with a fixed learning rate set at $\eta = 0.01$.
+* **Performance Metric:** Mean Squared Error (MSE) targeting an optimization goal of `1e-4` over a maximum parameter space of 175,000 epochs.
+* **Data Splitting Strategy:** Randomized sample partitioning (`dividerand`) assigned as:
+  * **80%** for the Training set
+  * **10%** for the Validation set
+  * **10%** for the Test set
 
-## 🧠 Σημειώσεις Σχεδιασμού & Optimization
-* **Αποφυγή Overfitting:** Επιλέχθηκε ο αλγόριθμος `traingd` αντί του Levenberg-Marquardt (`trainlm`), καθώς ο δεύτερος παρουσίαζε έντονο overfitting πολύ νωρίς κατά τη διάρκεια των μεγάλων εποχών εκπαίδευσης (έως 175.000 εποχές).
-* **Early Stopping:** Χρησιμοποιήθηκε η παράμετρος `max_fail = 25` για τον τερματισμό της εκπαίδευσης αν το validation error σταματήσει να βελτιώνεται, προστατεύοντας τη γενικευτική ικανότητα του δικτύου.
-* **Στατιστική Αξιολόγηση:** Για την εκτίμηση της ακρίβειας χρησιμοποιήθηκε η συνάρτηση `trimmean`, η οποία υπολογίζει το μέσο σφάλμα ανά σημείο (περίπου `-0.072`) απορρίπτοντας τις ακραίες τιμές (outliers).
+## 🧠 Design Insights & Optimization
+* **Overfitting Prevention:** The Gradient Descent algorithm (`traingd`) was intentionally selected over the faster Levenberg-Marquardt (`trainlm`) optimizer. Initial test iterations showed that Levenberg-Marquardt suffered from extreme, premature overfitting very early in training when operating across large epoch boundaries. 
+* **Early Stopping Framework:** Configured with a `max_fail = 25` threshold parameter. This acts as a circuit breaker that safely terminates training if the validation error fails to improve for 25 consecutive evaluation cycles, preserving the model's generalization capabilities.
+* **Statistical Performance Evaluation:** To determine the true average prediction error per point while eliminating distortions from extreme outliers, the `trimmean` function was applied to the absolute error vector, yielding a highly stable mean error profile of approximately `-0.072`.
 
-## 📊 Περιεχόμενα Repository
-* **`neuralNetProject.m`**: Ο πλήρης πηγαίος κώδικας σε MATLAB για τη δημιουργία, παραμετροποίηση, εκπαίδευση και αξιολόγηση του δικτύου.
-* **`Υπολογιστική Νοημοσύνη Εργασία 2.pdf`**: Η αναλυτική τεχνική αναφορά, η οποία περιλαμβάνει τα τρισδιάστατα διαγράμματα της πραγματικής έναντι της προσεγγιστικής συνάρτησης, καθώς και τη μελέτη των σφαλμάτων.
+## 📊 Directory Contents
+* **`neuralNetProject.m`**: The complete MATLAB source code handling grid vector generation, multi-layer network configuration, early-stopped training execution, and error tracking computations.
+* **`Υπολογιστική Νοημοσύνη Εργασία 2.pdf`**: The official analytical technical report containing internal structural schematics, 3D surface plot renderings contrasting the target vs. predicted output space, and performance error distributions.
 
-## 💻 Πώς να το τρέξετε
-1. Ανοίξτε τη MATLAB και πλοηγηθείτε στον φάκελο του project.
-2. Εκτελέστε το script γράφοντας στο Command Window:
+## 💻 How to Run
+1. Launch MATLAB and open this directory as your active Current Folder workspace.
+2. Run the main automation script from the Command Window to initialize training and plot the 3D surface comparisons:
    ```matlab
    neuralNetProject

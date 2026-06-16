@@ -11,7 +11,7 @@
     - Earthquake Information Website with API
 2. [Microprocessors and Applications](#microprocessors-and-applications)
     - Number conversion in ARM Processor
-3. [Integrated Circuits](#integrated-circuits) (Pending)
+3. [Integrated Circuits](#integrated-circuits)
     - Tic Tac Toe Game using SystemVerilog
 4. [Databases](#databases)
     - Grading System Website with MySQL Database
@@ -26,7 +26,7 @@
     - Final Term Project: Face Mask Detection & Chemical Binding Prediction
 7. [Algorithms and Complexity](#algorithms-and-complexity)
     - RNA Secondary Structure
-    - K-Center Problem Implementations
+    - K-Center Problem Implementations (Pending)
 8. [Digital Signal Processing](#digital-signal-processing)
     - Wiener Filter Implementation
 
@@ -48,11 +48,11 @@
 
 ## Integrated Circuits
 
-### 🚀 Project 3.1
+### 🚀 Tic Tac Toe Game using SystemVerilog
 
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
+- **Project Name:** Hardware-Based Tic-Tac-Toe Game with AI Move Generator
+- **Description:** A structural SystemVerilog implementation of a Tic-Tac-Toe game engineered for FPGA deployment. Features concurrent turn-management state machines, automated end-game win/tie evaluation logic, physical button debounce interfaces, and a specialized combinational AI Move Generator that dynamically computes optimal winning, blocking, or fallback moves.
+- **Folder:** [Integrated_Circuits](/Integrated_Circuits)
 
 ## Databases
 

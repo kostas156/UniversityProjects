@@ -1,44 +1,46 @@
-# Μη Παραμετρική Εκτίμηση, SVM & Μείωση Διαστατικότητας (PCA / LDA)
+# Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA / LDA)
 
-Αυτό το repository περιέχει τις λύσεις και τον κώδικα για τη **2η Εργασία** του μαθήματος **Αναγνώριση Προτύπων** του Τμήματος Ηλεκτρολόγων Μηκανικών και Μηχανικών Υπολογιστών (ΔΠΘ). Η εργασία εστιάζει στην εκτίμηση πυκνότητας πιθανότητας με παράθυρα Parzen, στην εκπαίδευση Support Vector Machines (SVM) για γραμμικά και μη γραμμικά προβλήματα, καθώς και στη μείωση διαστατικότητας για την ταξινόμηση πολυδιάστατων δεδομένων.
+This repository contains the source code, Jupyter Notebooks, and technical documentation for the **2nd Assignment** of the **Pattern Recognition** course at the Department of Electrical and Computer Engineering (DUTH). The project focuses on non-parametric probability density estimation using Parzen windows, training Support Vector Machines (SVM) for linear and non-linear classification tasks, and applying dimensionality reduction techniques for high-dimensional data visualization and benchmarking.
 
-## 📚 Δομή & Περιγραφή Ασκήσεων
+## 📚 Structure & Task Descriptions
 
-Η εργασία είναι χωρισμένη σε 3 Jupyter Notebooks (`.ipynb`), συνοδευόμενη από την αναλυτική θεωρητική έκθεση (Report).
+The project is divided into 3 distinct Jupyter Notebooks (`.ipynb`), each addressing a specific core pattern recognition topic, and is accompanied by a comprehensive technical report.
 
-### 📑 Άσκηση 1: Εκτίμηση Πυκνότητας Πιθανότητας με Παράθυρα Parzen
-* **Αρχείο:** `Project2_1_58071.ipynb`
-* **Αντικείμενο:** Εκτίμηση των πυκνοτήτων πιθανότητας $p(x|\omega_i)$ για 3 κλάσεις δεδομένων δύο χαρακτηριστικών (`Data_ex1.txt`).
-* **Υλοποίηση:** * Χρήση Gaussian συνάρτησης παραθύρου (Kernel Density Estimation).
-  * Μελέτη της επίδρασης της παραμέτρου εξομάλυνσης (εύρος παραθύρου) για τιμές $h_N = 0.3$, $h_N = 0.05$ (overfitting/θόρυβος) και $h_N = 2$ (oversmoothing).
-  * Τρισδιάστατη οπτικοποίηση των εκτιμημένων κατανομών σε κοινά γραφήματα.
+### 📑 Task 1: Probability Density Estimation via Parzen Windows (KDE)
+* **File:** `Project2_1_58071.ipynb`
+* **Dataset:** `Data_ex1.txt` (Features continuous 2D coordinate samples mapped to 3 distinct underlying pattern classes).
+* **Implementation:** * Implements a **Kernel Density Estimation (KDE)** framework utilizing a smooth Multivariate Gaussian window function.
+  * Evaluates and analyzes the explicit smoothing impact of the window width parameter $h_N$.
+  * Generates extensive **3D Surface Plots** to visualize the resulting probability density functions $p(x|\omega_i)$ and evaluates how the threshold space varies from highly localized overfitting to broad over-smoothing.
 
-### 📑 Άσκηση 2: Ταξινόμηση με Support Vector Machines (SVM)
-* **Αρχείο:** `Project2_2_58071.ipynb`
-* **Αντικείμενο:** Σχεδιασμός και εκπαίδευση ταξινομητών SVM για δύο κλάσεις σε δισδιάστατο χώρο με διαφορετικές δομές διασποράς.
-* **Υλοποίηση:**
-  * **Γραμμικός Πυρήνας (Linear Kernel):** Εκπαίδευση με `SVC(kernel='linear')`, εύρεση και οπτικοποίηση του βέλτιστου υπερεπιπέδου διαχωρισμού (decision boundary) και των διανυσμάτων υποστήριξης (Support Vectors).
-  * **Μη Γραμμικός Πυρήνας (RBF Kernel):** Εκπαίδευση με `SVC(kernel='rbf')` για τον χειρισμό μη γραμμικά διαχωρίσιμων δεδομένων, με οπτικοποίηση των καμπυλών απόφασης.
+### 📑 Task 2: Linear & RBF Support Vector Machines (SVM)
+* **File:** `Project2_2_58071.ipynb`
+* **Objective:** Train and visualize Support Vector Machines to isolate optimal hyperplanes and maximize classification margins.
+* **Implementation:**
+  * **Linear SVM:** Applied to a linearly separable 2D synthetic dataset to calculate the maximum-margin hyperplane, explicitly identifying and highlighting the key **Support Vectors** on the plot.
+  * **Non-Linear RBF SVM:** Applied to a non-linearly separable dataset. Utilizes a Radial Basis Function (RBF) kernel to map inputs into a higher-dimensional feature space, plotting the resulting non-linear decision boundaries.
 
-### 📑 Άσκηση 3: Μείωση Διαστατικότητας & Ταξινόμηση (Wine Dataset)
-* **Αρχείο:** `Project2_3_58071.ipynb`
-* **Αντικείμενο:** Διαχείριση του κλασικού Wine Dataset (13 χημικά χαρακτηριστικά, 3 ποικιλίες κρασιού) για τη μείωση της διαστατικότητας και την αξιολόγηση της ταξινόμησης.
-* **Υλοποίηση:**
-  * **Ανάλυση Κύριων Συνιστωσών (PCA):** Μείωση των 13 χαρακτηριστικών σε 2 Κύριες Συνιστώσες (Principal Components) με βάση την ιδιοτιμή και τα ιδιοδιανύσματα του πίνακα ιδιοδιασποράς.
-  * **Γραμμική Διακριτική Ανάλυση (LDA):** Εφαρμογή της μεθοδολογίας Fisher's LDA για τη μεγιστοποίηση της απόστασης μεταξύ των κλάσεων και τη μείωση του χώρου σε 2 διαστάσεις.
-  * **Αξιολόγηση:** Εκπαίδευση ταξινομητή Bayes με 10-fold Cross-Validation και συγκριτική μελέτη της απόδοσης (υπολογισμός μέσου σφάλματος, τυπικής απόκλισης και Πινάκων Σύγχυσης - Confusion Matrices) όταν χρησιμοποιούνται τα 5 πρώτα αρχικά χαρακτηριστικά έναντι όλων των 13.
+### 📑 Task 3: Dimensionality Reduction & Evaluation (PCA vs. Fisher's LDA)
+* **File:** `Project2_3_58071.ipynb`
+* **Dataset:** The standard **Wine Dataset** (178 samples featuring 13 morphological and chemical features across 3 distinct wine cultivars).
+* **Implementation:**
+  * **Principal Component Analysis (PCA):** Unsupervised reduction. Leverages the covariance matrix's eigenvectors and eigenvalues to compact the 13 features into the 2 most dominant Principal Components.
+  * **Fisher's Linear Discriminant Analysis (LDA):** Supervised reduction. Maximizes between-class scatter while minimizing within-class scatter, projecting the space into 2 dimensions optimized for class separation.
+  * **Statistical Benchmarking:** Trains a Bayesian Classifier on the reduced spaces. Evaluates performance using **10-fold Cross-Validation** to extract the mean classification error and standard deviation. Builds detailed **Confusion Matrices** contrasting the prediction accuracy when utilizing the first 5 original features versus all 13 features.
 
-## 📊 Περιεχόμενα Repository
-* **`.ipynb` αρχεία:** Πλήρης πηγαίος κώδικας Python (scikit-learn, numpy, matplotlib) για την εκτέλεση των πειραμάτων.
-* **`Εργασία 2 Report 58071.pdf`:** Η αναλυτική τεχνική έκθεση που περιλαμβάνει τα 3D plots του Parzen, τα boundaries του SVM, τα scatter plots των PCA/LDA και τη στατιστική ανάλυση των αποτελεσμάτων.
+## 📊 Directory Contents
+* **`.ipynb` files:** 3 standalone Python notebooks utilizing `scikit-learn`, `numpy`, and `matplotlib` to handle the data processing and machine learning lifecycles.
+* **`Data_ex1.txt`:** Raw 2-feature training data points with class indexes.
+* **`Εργασία 2 Report 58071.pdf`:** The analytical engineering report showcasing the generated 3D density topographies, SVM decision boundaries, PCA/LDA 2D scatter visualizations, and error variance metrics.
 
-## 🛠️ Τεχνολογίες & Βιβλιοθήκες
-* `Python 3`
-* `scikit-learn` (για τα μοντέλα SVM, PCA, LDA και Cross-Validation)
-* `numpy` & `pandas` (για τη διαχείριση και επεξεργασία των datasets)
-* `matplotlib` & `seaborn` (για τις σύνθετες 2D και 3D οπτικοποιήσεις)
+## 🛠| Requirements & Tools
+* `Python 3.x`
+* `numpy` & `pandas` (Matrix transformations and data manipulation)
+* `scikit-learn` (SVC, PCA, LinearDiscriminantAnalysis, and cross_val_score utilities)
+* `matplotlib` & `seaborn` (2D/3D scatter graphing and confusion matrix rendering)
 
-## 💻 Πώς να το τρέξετε
-1. Εγκαταστήστε τις βιβλιοθήκες:
+## 💻 How to Run
+1. Launch your command prompt or PowerShell inside this directory.
+2. Fire up the Jupyter interface:
    ```bash
-   pip install numpy pandas scikit-learn matplotlib seaborn
+   jupyter notebook

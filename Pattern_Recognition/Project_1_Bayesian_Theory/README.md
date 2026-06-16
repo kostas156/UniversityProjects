@@ -1,51 +1,49 @@
-# Στατιστική Ταξινόμηση κατά Bayes & Θεωρία Αποφάσεων (Αναγνώριση Πρότυπων)
+# Bayesian Classification & Decision Theory (Pattern Recognition)
 
-Αυτό το repository περιέχει τις λύσεις και τον κώδικα για την **1η Εργασία** του μαθήματος **Αναγνώριση Προτύπων** του Τμήματος Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών (ΔΠΘ). Η εργασία εστιάζει στην εφαρμογή Bayesian κριτηρίων, στη διαχείριση κόστους λανθασμένης απόφασης, στη χρήση πολυδιάστατων κανονικών κατανομών και στην αναδρομική εκτίμηση παραμέτρων.
+This repository contains the source code, Jupyter Notebooks, and technical documentation for the **1st Assignment** of the **Pattern Recognition** course at the Department of Electrical and Computer Engineering (DUTH). The project focuses on applying Bayesian decision criteria, minimizing Bayes Risk under specific loss matrices, managing multivariate normal distributions, and evaluating recursive parameter estimation.
 
-## 📚 Δομή & Περιγραφή Ασκήσεων
+## 📚 Structure & Task Descriptions
 
-Η εργασία είναι χωρισμένη σε 5 Jupyter Notebooks (`.ipynb`), ένα για κάθε άσκηση, συνοδευόμενη από την αναλυτική θεωρητική έκθεση (Report).
+The project is split into 5 dedicated Jupyter Notebooks (`.ipynb`), each addressing a specific academic task, and is backed by a comprehensive mathematical report.
 
-### 📑 Άσκηση 1: Ταξινόμηση Email (Bayesian Classification)
-* **Αρχείο:** `Project1_1_58071.ipynb`
-* **Αντικείμενο:** Σχεδιασμός συστήματος ταξινόμησης email σε 3 κλάσεις: *Normal* ($n$), *Spam* ($s$) και *Malicious* ($m$).
-* **Υλοποίηση:** Υπολογισμός των εκ των υστέρων (posterior) πιθανοτήτων $P(\omega_i|D)$ για 5 διαφορετικές στάθμες επικινδυνότητας $D \in \{1, 2, 3, 4, 5\}$, με βάση δοσμένες a priori πιθανότητες και πίνακες κατανομής (evidence).
+### 📑 Task 1: Email Spam & Malicious Classification
+* **File:** `Project1_1_58071.ipynb`
+* **Objective:** Design a structural classification system sorting incoming emails into 3 distinct classes: *Normal* ($n$), *Spam* ($s$), and *Malicious* ($m$).
+* **Implementation:** Calculates the posterior probabilities $P(\omega_i|D)$ across 5 different threat indicators ($D_1$ to $D_5$) based on given prior probabilities and likelihood metrics to optimize class assignments.
 
-### 📑 Άσκηση 2: Ταξινόμηση 2 Κλάσεων με Ελάχιστο Κόστος (Bayesian Decision Theory)
-* **Αρχείο:** `Project1_2_58071.ipynb`
-* **Αντικείμενο:** Επίλυση προβλήματος ταξινόμησης για δύο μονοδιάστατες κανονικές κατανομές $\mathcal{N}(2, 0.5)$ και $\mathcal{N}(1.8, 0.2)$.
-* **Υλοποίηση:** * Μαθηματικός και προγραμματιστικός προσδιορισμός των περιοχών απόφασης $\mathcal{R}_1$ και $\mathcal{R}_2$ με βάση πίνακα κόστους λανθασμένης ταξινόμησης $\lambda$.
-  * Παραγωγή 10.000 τυχαίων δειγμάτων, υπολογισμός του εμπειρικού σφάλματος ταξινόμησης και του συνολικού μέσου κόστους (Bayes Risk).
+### 📑 Task 2: Two-Category Decision Boundaries & Bayes Risk Minimization
+* **File:** `Project1_2_58071.ipynb`
+* **Objective:** Define the optimal decision regions and calculate the absolute minimal Bayes Risk (overall average cost) for two single-dimensional normal distributions $p(x|\omega_1) \sim N(-1, 1)$ and $p(x|\omega_2) \sim N(1, 1)$.
+* **Implementation:** Integrates a localized loss matrix penalizing false negatives and false positives differently. Computes the numerical decision boundaries where the conditional risks intersect.
 
-### 📑 Άσκηση 3: Πολυδιάστατος Bayesian Ταξινομητής (Multivariate Gaussians)
-* **Αρχείο:** `Project1_3_58071.ipynb`
-* **Αντικείμενο:** Ανάπτυξη γενικού ταξινομητή για δεδομένα 3 κλάσεων με τρία χαρακτηριστικά (features) που ακολουθούν πολυδιάστατες κανονικές κατανομές.
-* **Υλοποίηση:** * Σχεδίαση 3 συναρτήσεων: υπολογισμός της συνάρτησης διάκρισης $g_i(\mathbf{x})$, εύρεση της βέλτιστης κλάσης και υπολογισμός του εμπειρικού σφάλματος.
-  * Συγκριτική μελέτη της απόδοσης του ταξινομητή χρησιμοποιώντας: α) μόνο 2 χαρακτηριστικά και β) όλα τα διαθέσιμα χαρακτηριστικά, αναδεικνύοντας τη σημασία της διάστασης των δεδομένων.
+### 📑 Task 3: Multi-Feature Multivariate Gaussian Classifier
+* **File:** `Project1_3_58071.ipynb`
+* **Objective:** Build a 3-class multivariate Bayesian classifier operating over 2 separate continuous features ($x_1, x_2$) assuming normal distribution profiles.
+* **Implementation:** * **Sub-task A:** Implements a single-feature classifier using only $x_1$ and evaluates the empirical error rate.
+  * **Sub-task B:** Expands the network into a 2D feature space using both $x_1$ and $x_2$ concurrently. The comparison demonstrates how adding relevant statistical features shrinks the decision error rate.
 
-### 📑 Άσκηση 4: Ανάλυση Πιθανότητας Σφάλματος (Error Bound Analysis)
-* **Αρχείο:** `Project1_4_58071.ipynb`
-* **Αντικείμενο:** Μελέτη της συνάρτησης σφάλματος $P_{error}(P_1) = P_1^2 (1 - P_1)$ ως προς την α priori πιθανότητα $P_1$ της κλάσης $\omega_1$.
-* **Υλοποίηση:** * Εύρεση της μέγιστης τιμής σφάλματος (worst-case scenario) και της ελάχιστης (ιδανικής) τιμής μέσω παραγώγισης.
-  * Οπτικοποίηση της συμπεριφοράς του σφάλματος με γραφικές παραστάσεις.
+### 📑 Task 4: Error Probability Bounds & Worst-Case Analysis
+* **File:** `Project1_4_58071.ipynb`
+* **Objective:** Analytically determine the optimal decision threshold $\hat{x}$ that minimizes the total error probability for two Gaussian classes with identical variances.
+* **Implementation:** Mathematical derivation of the ideal threshold by taking derivatives of the error function. Includes visualizations charting out how the error rate scales under worst-case prior setups vs. ideal conditions.
 
-### 📑 Άσκηση 5: Αναδρομική Εκτίμηση Bayes (Recursive Bayesian Estimation)
-* **Αρχείο:** `Project1_5_58071.ipynb`
-* **Αντικείμενο:** Εκτίμηση της πιθανότητας $\theta$ (φέρνω κεφάλι) σε ένα νόμισμα μετά από $N=10$ ρίψεις με συγκεκριμένη ακολουθία αποτελεσμάτων, με αρχική κατανομή τύπου Beta Distribution.
-* **Υλοποίηση:** * Αναδρομικός υπολογισμός και σχεδίαση της πυκνότητας πιθανότητας $p(\theta|D^N)$ για $N=1, 5, 10$.
-  * Υπολογισμός της εκ των υστέρων πιθανότητας για το επόμενο αποτέλεσμα (γράμματα) μέσω αριθμητικής ολοκλήρωσης με μεταβαλλόμενο βήμα διακριτοποίησης ($d\theta$) για βέλτιστη ακρίβεια.
+### 📑 Task 5: Recursive Bayesian Parameter Estimation
+* **File:** `Project1_5_58071.ipynb`
+* **Objective:** Estimate the unknown bias parameter $\theta$ (probability of landing heads) of a coin after observing $N=10$ sequential flips with a predefined structural pattern, initialized via a Beta Distribution prior.
+* **Implementation:** Recursively updates and plots the true continuous probability density function $p(\theta|D^N)$ for iterations $N=1, 5, 10$. Computes the absolute posterior probability for the next flip (tails) via adaptive numerical integration using variable discretization steps ($d\theta$) to maintain high precision.
 
-## 📊 Περιεχόμενα Repository
-* **`.ipynb` αρχεία:** Κώδικας Python σε περιβάλλον Jupyter/Colab για την πλήρη εξομοίωση και επίλυση των ασκήσεων.
-* **`Εργασία 1 Report 58071.pdf`:** Η επίσημη αναλυτική τεχνική έκθεση με τις μαθηματικές αποδείξεις, τους πίνακες αποτελεσμάτων και τα τελικά διαγράμματα σύγκλισης.
+## 📊 Directory Contents
+* **`.ipynb` files:** 5 standalone Python notebooks implementing the statistical computations, classifiers, loops, and visualization curves.
+* **`Εργασία 1 Report 58071.pdf`:** The formal technical report featuring detailed handwritten/typed mathematical proofs, derivative calculations, truth tables, and final output charts.
 
-## 🛠️ Τεχνολογίες & Βιβλιοθήκες
-Η υλοποίηση βασίστηκε σε Python 3 και στις εξής βιβλιοθήκες:
-* `numpy` για τη διαχείριση πινάκων, διανυσμάτων και στατιστικών υπολογισμών.
-* `matplotlib` για τη δημιουργία των διαγραμμάτων και των κατανομών.
-* `pandas` (ή ενσωματωμένες δομές) για τη διαχείριση των δεδομένων εισόδου.
+## 🛠️ Requirements & Tools
+* `Python 3.x`
+* `numpy` (Vectorized matrix calculations and array structures)
+* `scipy` (Numerical integration routines and statistical distributions)
+* `matplotlib` & `seaborn` (Probability density curves and decision region plots)
 
-## 💻 Πώς να το τρέξετε
-1. Εγκαταστήστε τις απαραίτητες βιβλιοθήκες:
+## 💻 How to Run
+1. Open your terminal or PowerShell inside this directory.
+2. Launch Jupyter Notebook:
    ```bash
-   pip install numpy matplotlib pandas
+   jupyter notebook
