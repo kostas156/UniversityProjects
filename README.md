@@ -13,7 +13,7 @@
     - Number conversion in ARM Processor
 3. [Integrated Circuits](#integrated-circuits) (Pending)
     - Tic Tac Toe Game using SystemVerilog
-4. [Databases](#databases) (Pending)
+4. [Databases](#databases)
     - Grading System Website with MySQL Database
 5. [Computer Intelligence](#computer-intelligence)
     - Knapsack Problem using Genetic Algorithm
@@ -112,8 +112,8 @@
 
 ### 🚀 Wiener Filter Implementation
 
-- **Project Name:** Wiener Filter Implementation
-- **Description:** Given a audio file we have to add white sound in that and try create and apply a Wiener filter with different techniques and with different given data for each subtask.
+- **Project Name:** Audio Denoising & Linear Prediction using Wiener Filters
+- **Description:** GMATLAB framework implementing optimal Wiener Filtering strategies for audio restoration. Features global and short-time frame-based processing (Hanning windowed Overlap-Add), adaptive noise covariance estimation from unvoiced silent intervals, and multi-step forward Linear Prediction modeling evaluated via SNR benchmarking.
 - **Folder:** [DSP](/DSP)
 
 ## 📝 License
