@@ -29,46 +29,72 @@ A curated collection of academic projects covering software engineering, machine
 
 > **📖 Language note:** Most technical reports are written in Greek, as the corresponding courses were taught in Greek.
 
-## 📚 Table of Contents
 
-1. [Software Engineering](#software-engineering)
-    - Earthquake Information Website with API
-2. [Microprocessors and Applications](#microprocessors-and-applications)
-    - Number conversion in ARM Processor
-3. [Integrated Circuits](#integrated-circuits)
-    - Tic Tac Toe Game using SystemVerilog
-4. [Databases](#databases)
-    - Grading System Website with MySQL Database
-5. [Computer Intelligence](#computer-intelligence)
-    - Knapsack Problem using Genetic Algorithm
-    - Function Approximation using Neural Networks (MLP)
-    - Fuzzy Cruise Control System
-6. [Pattern Recognition](#pattern-recognition)
-    - Bayesian Classification & Decision Theory
-    - Non-Parametric Estimation, SVM & Dimensionality Reduction (PCA/LDA)
-    - Clustering, Feature Selection (PCA) & Multidimensional Scaling (MDS)
-    - Final Term Project: Face Mask Detection & Chemical Binding Prediction
-7. [Algorithms and Complexity](#algorithms-and-complexity)
-    - RNA Secondary Structure
-    - K-Center Problem Implementations (Pending)
-8. [Digital Signal Processing](#digital-signal-processing)
-    - Wiener Filter Implementation
+## ⭐ Featured Projects
 
-## Software Engineering
+A selection of projects highlighting practical experience in machine learning, software development, and computational methods.
 
-### 🚀 Earthquake Information Website with API
+| 🧠 Machine Learning & Computer Vision | 🌐 Software Engineering & APIs |
+|:---|:---|
+| **[Face Mask Detection & Molecular Binding Prediction](Pattern_Recognition/)** | **[Earthquake Information Website](Software_Engineering/)** |
+| Image classification using CNNs and ResNet-18, alongside machine learning approaches for predicting molecular binding affinity. | A web development project focused on presenting earthquake information through an external API. |
+| `CNN` `ResNet-18` `PCA` `SVM` | `Web Development` `API Integration` |
 
-- **Project Name:** Earthquake Information Website with API
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
+| 🧬 Computational Intelligence | 🗄️ Databases & Web Applications |
+|:---|:---|
+| **[Genetic Algorithm for the Knapsack Problem](Computer_Intelligence/)** | **[UniSystem — University Grading System](Databases/)** |
+| MATLAB implementation of a genetic algorithm for the 0-1 Knapsack Problem, including improvements to computational efficiency. | A university administration and grading application built using PHP and MySQL, supporting multiple user roles. |
+| `MATLAB` `Genetic Algorithms` `Optimization` | `PHP` `MySQL` `Bootstrap` |
 
-## Microprocessors and Applications
+---
 
-### 🚀 Number conversion in ARM Processor
 
-- **Project Name:** Number conversion in ARM Processor
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
+## 📂 Explore the Projects
+
+Browse the projects by course and technical area.
+
+| Course | Projects & Topics |
+|:---|:---|
+| 🧠 **[Pattern Recognition](Pattern_Recognition/)** | Bayesian Classification, SVMs, PCA/LDA, Clustering, CNNs, Transfer Learning |
+| 💻 **[Software Engineering](Software_Engineering/)** | Earthquake Information Web Application, API Integration |
+| 🗄️ **[Databases](Databases/)** | UniSystem — University Administration & Grading System |
+| 🧬 **[Computer Intelligence](Computer_Intelligence/)** | Genetic Algorithms, Neural Networks, Fuzzy Logic |
+| ⚙️ **[Algorithms & Complexity](RNA_Secondary_Structure/)** | RNA Secondary Structure, Dynamic Programming |
+| 🔌 **[Integrated Circuits](Integrated_Circuits/)** | Hardware-Based Tic-Tac-Toe, SystemVerilog |
+| 🖥️ **[Microprocessors](Microprocessors/)** | ARM Programming, Number Base Conversion |
+| 📊 **[Digital Signal Processing](DSP/)** | Wiener Filtering, Audio Denoising, Linear Prediction |
+
+Each folder contains the available project implementations, documentation, and supporting materials.
+
+---
+
+
+
+## 💻 Software Engineering
+
+### 🌍 Earthquake Information Website
+
+A university coursework project focused on developing a web application that retrieves and presents earthquake-related information through an external API.
+
+**Key topics:** Web Development · API Integration · Data Presentation
+
+📁 **[View Project](Software_Engineering/)**
+
+---
+
+
+
+## 🔌 Microprocessors and Applications
+
+### 🔢 Number Base Conversion on ARM
+
+A university coursework project exploring number-base conversion using an ARM processor.
+
+**Key topics:** ARM Architecture · Number Systems
+
+📁 **[View Project](Microprocessors/)**
+
+---
 
 ## Integrated Circuits
 
@@ -114,9 +140,27 @@ A curated collection of academic projects covering software engineering, machine
 - **Description:** Unsupervised learning pipeline evaluated on the morphological Seeds dataset using K-Means and Hierarchical Agglomerative Clustering across Euclidean and Cosine distances, benchmarked via Rand Index and Silhouette Coefficients. Features were optimized using PCA to preserve variance targets ($90\%$ & $95\%$). Includes coordinate map reconstruction from raw air distance matrices via Classical Multidimensional Scaling (MDS) in 2D and 3D spaces to study earth curvature constraints.
 - **Folder:** [Pattern_Recognition/Project_3_Clustering_MDS](/Pattern_Recognition/Project_3_Clustering_MDS)
 
-### 🚀 Final Term Project: Face Mask Detection & Chemical Binding Prediction
-- **Description:** Two-part advanced term project. Part 1 develops an automated Image Classification pipeline using custom Deep Convolutional Neural Networks (CNNs) and Transfer Learning via ResNet-18 for face mask compliance detection, optimized using fine-tuned classification boundaries for edge-case sorting. Part 2 addresses pharmacological drug discovery by applying PCA feature compaction and automated Bayesian search to tune deep MLPs, SVM regressions, and soft/hard Ensemble Voting models predicting molecular binding affinities, validated via AUC-ROC evaluation.
-- **Folder:** [Pattern_Recognition/Final_Term_Project](/Pattern_Recognition/Final_Term_Project)
+
+### 🧠 Final Term Project — Computer Vision & Machine Learning
+
+A two-part academic project exploring deep learning for image classification and machine learning for molecular binding prediction.
+
+**Part 1 — Face Mask Detection**
+- Developed and evaluated Convolutional Neural Networks (CNNs) for face mask image classification.
+- Explored transfer learning using ResNet-18.
+- Investigated model performance on different image classification cases.
+
+**Part 2 — Molecular Binding Prediction**
+- Explored machine learning methods for predicting molecular binding affinity.
+- Applied Principal Component Analysis (PCA) for dimensionality reduction.
+- Experimented with Multilayer Perceptrons (MLPs), Support Vector Machines (SVMs), and ensemble approaches.
+
+**Key Topics:** `Computer Vision` · `CNN` · `ResNet-18` · `Transfer Learning` · `PCA` · `MLP` · `SVM`
+
+📁 **[View Project](Pattern_Recognition/Final_Term_Project/)**
+
+---
+
 
 ## Algorithms and Complexity
 
@@ -126,11 +170,6 @@ A curated collection of academic projects covering software engineering, machine
 - **Description:** Given an RNA sequence, calculate the RNA Secondary structure with the most bonds possible. Dynamic programming was used for the important function of the project. The project is implemented in python using a Jupyter Notebook.
 - **Folder:** [RNA_Secondary_Structure](/RNA_Secondary_Structure)
 
-### 🚀 Project 6.2
-
-- **Project Name:** [Project Name]
-- **Description:** Briefly describe the project and its purpose. Include any relevant details such as programming languages used, frameworks, and technologies involved.
-- **Folder:** [Link to project folder]
 
 ## Digital Signal Processing
 
