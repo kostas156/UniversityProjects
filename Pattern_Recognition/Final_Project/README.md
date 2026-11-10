@@ -1,43 +1,146 @@
-## Pattern Recognition - Final Term Project
 
-This section contains the comprehensive **Final Term Project** for the Pattern Recognition course. The project is split into two distinct parts: an Image Classification problem utilizing Deep Learning (CNNs & Transfer Learning) and a Biological Binding Affinity Prediction problem using advanced Machine Learning models, Dimensionality Reduction (PCA), and Ensemble methods.
+<div align="center">
 
-## 📚 Structure & Task Descriptions
+# 🧠 Pattern Recognition — Final Project
 
-The project is implemented across 2 core Jupyter Notebooks (`.ipynb`), backed by the complete dataset predictions, the official technical report, and the final presentation slides.
+### Computer Vision & Molecular Binding Classification
 
-### 📑 Part 1: Face Mask Detection & Compliance (Computer Vision)
-* **File:** `Final_Project_1_58071.ipynb`
-* **Dataset:** `Mask_DB` (1,044 images *with_mask*, 1,044 images *without_mask*, and 56 images of *mask_incorrect_use*).
-* **Implementation & Architecture:**
-  * **Custom CNNs:** Designed and trained two scratch Convolutional Neural Network architectures from the ground up, utilizing Layer normalization, ReLU, Max Pooling, and Dropout to prevent overfitting.
-  * **Transfer Learning:** Integrated and fine-tuned a pre-trained **ResNet-18** network, tracking accuracy and cross-entropy loss variations.
-  * **Edge-Case Evaluation:** Challenged the models against the tricky *incorrect_mask_use* class. Handled class shifts by shifting the classification thresholds (tuning up to `0.95` and `0.999998`) to capture non-compliant behavior effectively.
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-### 📑 Part 2: Chemical Molecule Binding Affinity Prediction (Bioinformatics)
-* **File:** `Final_Project_2_58071.ipynb`
-* **Objective:** Predict the degree of binding affinity between chemical molecules and biological receptors (crucial for pharmacology and drug discovery).
-* **Implementation:**
-  * **Data Preprocessing & Dimensionality Reduction:** Cleaned and scaled high-dimensional molecular descriptors. Applied **Principal Component Analysis (PCA)** to reduce the feature space to 426 dominant Principal Components.
-  * **Hyperparameter Optimization:** Conducted an automated **Bayesian Search** to select the ultimate layer topology and training parameters for a deep Neural Network.
-  * **Advanced Modeling:** Evaluated and tuned Multi-Layer Perceptrons and **Support Vector Machines (SVM)** to compare individual regression/classification boundaries.
-  * **Ensemble Methods:** Built a combined **Voting/Ensemble Classifier** utilizing a soft/hard confidence voting mechanism to maximize accuracy. Performance was thoroughly evaluated via **AUC-ROC Curves**.
+**Academic Coursework | Democritus University of Thrace**
 
-## 📊 Directory Contents
-* **`Final_Project_1_58071.ipynb`:** Jupyter Notebook covering the full image processing and Deep Learning workflow.
-* **`Final_Project_2_58071.ipynb`:** Jupyter Notebook containing feature selection, Bayesian search, and ensemble modeling.
-* **`test_predictions.csv`:** Output file holding the final calculated test predictions.
-* **`Τελική Εργασία Αναφορά 58071.pdf`:** The exhaustive technical report featuring training curves, network topologies, ROC curves, and detailed mathematical insights.
-* **`Τελική Εργασία Παρουσίαση 58071.pptx`:** The official presentation slides capturing key findings, benchmarking statistics, and model comparisons.
+Two machine learning applications exploring image classification, dimensionality reduction, and predictive modeling.
 
-## 🛠️ Requirements & Tools
-* `Python 3`
-* `PyTorch` / `TensorFlow` (Deep Learning & Transfer Learning)
-* `scikit-learn` (SVM, PCA, Ensemble methods, Bayesian Optimization, metrics)
-* `numpy` & `pandas` (Data processing)
-* `matplotlib` & `seaborn` (ROC curves, confusion matrices, loss graphs)
+</div>
 
-## 💻 How to Run
-1. Install dependencies:
-   ```bash
-   pip install torch torchvision numpy pandas scikit-learn matplotlib seaborn
+---
+
+## 📌 Project Overview
+
+This final coursework project consists of two independent machine learning tasks.
+
+| Part | Application | Main Methods |
+|:---|:---|:---|
+| **01** | Face Mask Detection | CNNs, Data Augmentation, ResNet-18 |
+| **02** | Molecular Binding Classification | PCA, LDA, MLP, SVM, Ensemble Learning |
+
+Both tasks involve model development, experimentation, and performance evaluation.
+
+---
+
+## 🖼️ Part 1 — Face Mask Detection
+
+**Objective:** Classify facial images according to whether a person is wearing a face mask.
+
+### Dataset & Preprocessing
+
+- 1,044 images with masks and 1,044 without masks.
+- Additional set of 56 images showing incorrect mask usage.
+- Stratified train/validation/test splitting (60/20/20).
+- Image preprocessing and augmentation using torchvision.
+
+### Models & Experiments
+
+- **Custom CNNs:** Development of convolutional architectures with different depths and configurations.
+- **Data Augmentation:** Experiments with image rotation, horizontal flipping, and color transformations.
+- **Transfer Learning:** Adaptation and fine-tuning of a pretrained ResNet-18 for binary classification.
+- **Edge-Case Analysis:** Investigation of classification behavior on incorrectly worn masks and different decision thresholds.
+
+### Evaluation
+
+The models were assessed using classification accuracy, confusion matrices, and Precision–Recall analysis.
+
+📓 **[View Computer Vision Notebook](Final_Project_1_58071.ipynb)**
+
+---
+
+## 🧬 Part 2 — Molecular Binding Classification
+
+**Objective:** Predict whether a chemical molecule can effectively bind to a target biological receptor.
+
+### Dataset & Preprocessing
+
+- 1,115 labeled molecular samples.
+- 3,473 molecular descriptors per sample.
+- An additional unlabeled prediction set of 124 samples.
+- Feature standardization and dimensionality reduction using PCA and LDA.
+
+### Models & Experiments
+
+- **Neural Networks:** Development and comparison of feedforward MLP classifiers.
+- **Support Vector Machines:** Classification with SVMs and hyperparameter experiments.
+- **Ensemble Learning:** Combination of neural network and SVM predictions using a confidence-based selection approach.
+- **Additional Exploration:** Random Forest experiments and alternative ensemble approaches.
+
+### Evaluation
+
+The implementations include accuracy, classification reports, confusion matrices, Precision–Recall analysis, and ROC–AUC evaluation.
+
+The project also includes functionality for exporting predictions and confidence scores to CSV.
+
+📓 **[View Molecular Classification Notebook](Final_Project_2_58071.ipynb)**
+
+---
+
+## 🛠️ Technologies
+
+| Category | Tools |
+|:---|:---|
+| Programming | Python |
+| Deep Learning | PyTorch, torchvision |
+| Machine Learning | scikit-learn |
+| Data Processing | NumPy, pandas |
+| Visualization | Matplotlib, Seaborn |
+| Development Environment | Jupyter Notebook, Google Colab |
+
+---
+
+## 📁 Repository Contents
+
+| File | Description |
+|:---|:---|
+| [Final_Project_1_58071.ipynb](Final_Project_1_58071.ipynb) | Computer vision experiments |
+| [Final_Project_2_58071.ipynb](Final_Project_2_58071.ipynb) | Molecular binding classification experiments |
+| [test_predictions.csv](test_predictions.csv) | Generated predictions for the second task |
+
+The repository also contains the image dataset folders, an academic report, and presentation slides.
+
+---
+
+## ▶️ Running the Notebooks
+
+The notebooks were originally developed using Jupyter and Google Colab.
+
+**Part 1:** The image notebook uses a Google Drive dataset path. Update `base_dir` to point to the image dataset before execution.
+
+**Part 2:** The molecular classification notebook expects the following input files:
+
+- `Train_Features.csv`
+- `Train_Labels.csv`
+- `Test_Features.csv`
+
+These must be available in the notebook's working directory.
+
+The notebooks preserve their original coursework structure and saved experimental outputs. Reproducing the experiments may require environment and path adjustments.
+
+---
+
+## 📖 Documentation
+
+The original technical report and presentation slides are included in this directory.
+
+Documentation is primarily written in Greek, as the course was taught in Greek.
+
+---
+
+<div align="center">
+
+**Developed by Konstantinos Iatrou**
+
+*Department of Electrical & Computer Engineering*  
+*Democritus University of Thrace*
+
+</div>
