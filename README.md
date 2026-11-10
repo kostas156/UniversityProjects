@@ -36,7 +36,7 @@ A selection of projects highlighting practical experience in machine learning, s
 
 | 🧠 Machine Learning & Computer Vision | 🌐 Software Engineering & APIs |
 |:---|:---|
-| **[Face Mask Detection & Molecular Binding Prediction](Pattern_Recognition/)** | **[Earthquake Information Website](Software_Engineering/)** |
+| **[Face Mask Detection & Molecular Binding Prediction](Pattern_Recognition/Final_Project/)** | **[Earthquake Information Website](Software_Engineering/)** |
 | Image classification using CNNs and ResNet-18, alongside machine learning approaches for predicting molecular binding affinity. | A web development project focused on presenting earthquake information through an external API. |
 | `CNN` `ResNet-18` `PCA` `SVM` | `Web Development` `API Integration` |
 
@@ -157,7 +157,7 @@ A two-part academic project exploring deep learning for image classification and
 
 **Key Topics:** `Computer Vision` · `CNN` · `ResNet-18` · `Transfer Learning` · `PCA` · `MLP` · `SVM`
 
-📁 **[View Project](Pattern_Recognition/Final_Term_Project/)**
+📁 **[View Project](Pattern_Recognition/Final_Project/)**
 
 ---
 
