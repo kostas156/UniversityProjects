@@ -1,9 +1,33 @@
 <div align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS05zaqo-s3g7aZ3MGTTq1AnDa1PWw-Nvo3pfMKMvd4hepTgQTUp1wAldpJ3UTtS3n0Kl8" alt="University Logo" width="200">
-  <h1>University Projects Repository</h1>
-  <p>🎓 Showcase of my university projects for my CV 🚀</p>
-  <p>All projects' reports are in Greek because all subjects were taught in Greek language <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg" alt="University Logo" width="20"></p>
+
+# 🎓 University Projects
+
+### Electrical & Computer Engineering
+**Democritus University of Thrace (DUTH)**
+
+A curated collection of academic projects covering software engineering, machine learning, algorithms, and computer systems.
+
+<p>
+  <img src="https://img.shields.io/badge/Academic-Coursework-2563EB?style=for-the-badge" alt="Academic Coursework"/>
+  <img src="https://img.shields.io/badge/8-Course_Areas-0F766E?style=for-the-badge" alt="8 Course Areas"/>
+  <img src="https://img.shields.io/badge/ECE-DUTH-334155?style=for-the-badge" alt="ECE DUTH"/>
+</p>
+
 </div>
+
+---
+
+### ✨ Areas of Focus
+
+| Area | Topics |
+|:---|:---|
+| 🧠 **Machine Learning & AI** | Pattern Recognition, CNNs, Neural Networks, SVMs, Clustering |
+| 💻 **Software Engineering** | Web Applications, API Integration, Databases |
+| ⚙️ **Algorithms & Optimization** | Dynamic Programming, Genetic Algorithms |
+| 🔌 **Computer Systems** | ARM Programming, SystemVerilog |
+| 📊 **Signal Processing** | Wiener Filtering, Audio Denoising |
+
+> **📖 Language note:** Most technical reports are written in Greek, as the corresponding courses were taught in Greek.
 
 ## 📚 Table of Contents
 
